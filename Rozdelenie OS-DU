@@ -1,0 +1,18 @@
+# Domáca úloha
+
+## Tabuľka operačných systémov
+
+| OS         | Účel                                                | Licencia             | Zaujímavosť |
+|-------------|-----------------------------------------------------|----------------------|--------------|
+| **Windows 11** | Bežné používanie, kancelárske a herné počítače      | Komerčná (Microsoft) | Má vstavanú umelú inteligenciu Copilot |
+| **macOS**      | Používa sa na počítačoch Apple (MacBook, iMac)     | Komerčná (Apple)     | Je založený na systéme Unix |
+| **Ubuntu**     | Serverové a osobné počítače, výučba Linuxu         | Open-source (GPL)    | Veľmi obľúbený medzi vývojármi |
+| **Android**    | Mobilné telefóny, tablety, TV, IoT zariadenia      | Open-source (Apache) | Je založený na jadre Linuxu |
+| **FreeRTOS**   | Mikrokontroléry a embedded zariadenia              | Open-source (MIT)    | Používa sa napr. v inteligentných hodinkách a senzorech |
+
+---
+
+## Bonusová otázka
+
+**Embedded OS, ktorý používam doma:**  
+➡️ Napríklad **Tizen OS** – používa sa v smart TV od Samsungu.
