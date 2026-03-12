@@ -13,7 +13,7 @@ Ikonka je opäť normálna a internet opäť funguje.
 | Parameter | Hodnota |
 |------------|----------|
 | Počet fyzických diskov | 1 |
-| Celková kapacita disku | 465,75 GB |
+| Celková kapacita disku 0 | 465,75 GB |
 | Typ rozdelenia disku | GPT |
 | Súborový systém (C:) | NTFS |
 | Voľné miesto na C: | 371,19 GB |
