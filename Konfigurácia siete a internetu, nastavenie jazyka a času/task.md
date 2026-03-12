@@ -16,7 +16,6 @@
 | DHCP povolené | Áno |
 | MAC adresa (Fyzická adresa) | A0-B3-39-C4-A0-54 |
 
-
 ---
 
 # Ú1: Test konektivity
@@ -59,19 +58,9 @@
 
 ---
 
-# Ú2: Informácie o sieťovom adaptéri
+# Ú2: Klávesnica a regionálne nastavenia
 
-| Údaj | Hodnota |
-|---|---|
-| Adaptér | Intel(R) Wi-Fi 6 AX201 160MHz |
-| MAC adresa | A0-B3-39-C4-A0-54 |
-| DHCP povolené | Áno |
-| Autokonfigurácia | Áno |
-
----
-
-# Ú2: Regionálne nastavenia
-
+- **Anglická klávesnica:** funguje správne  
 - **Časové pásmo:** Europe/Bratislava (UTC+01:00)  
 - **Pri zmene na UTC+0 (Londýn):** čas sa zmení o 1 hodinu dozadu  
 - **Synchronizácia času:** zapnutá
