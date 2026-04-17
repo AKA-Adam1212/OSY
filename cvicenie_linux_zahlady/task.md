@@ -1,35 +1,3 @@
----
-
-### 5.2 Aký znak je na konci tvojho promptu?
-
-- [x] `$`  
-- [ ] `#`  
-
----
-
-### 5.3 Čo tento znak hovorí o tvojich právach v systéme?
-
-Že používateľ nemá administrátorské (root) práva.
-
----
-
-### 5.4 Čítanie promptu
-
-Pozri sa na svoj prompt (príklad: `andrej@mint:~$`).  
-Vypíš, čo všetko z neho vieš prečítať **bez napísania jediného príkazu**:
-
-- meno používateľa  
-- názov počítača  
-- aktuálny priečinok  
-- typ používateľa (bežný alebo root)
-
----
-
-## Záver
-
-Čo bolo pre teba dnes nové alebo zaujímavé?
-
-Práca s TTY konzolou a rozdiel medzi používateľom a rootom.# Cvičenie: Linux — základy, GNU/GPL a distribúcie
 
 > Vyplň odpovede pod každú otázku. Pri otázkach typu áno/nie zaškrtni `- [x]`.  
 > Výstupy z terminálu prilep do code blokov.
@@ -155,7 +123,7 @@ $ whoami
 student
 
 $ hostname
-linux-pc
+student-virtualbox
 
 $ pwd
 /home/student
