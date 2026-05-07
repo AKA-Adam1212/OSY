@@ -1,12 +1,12 @@
 # Cvičenie: Príkazový riadok OS — `ls`, `cd`, `cp`, `rm`, `mv`
 
-> Vyplň odpovede pod každú otázku. Pri otázkach typu áno/nie zaškrtni `- [x]`. Výstupy z terminálu prilep do code blokov.
+> Vyplnené cvičenie (ukážková správna verzia)
 
 ---
 
 ## Úloha 1 — Orientácia v systéme
 
-### 1.1 Napíš `pwd` a zapíš výstup (absolútna cesta k tvojmu domovu):
+### 1.1
 
 ```
 /home/student
@@ -14,22 +14,22 @@
 
 ---
 
-### 1.2 Napíš `ls`. Vymenuj aspoň 3 položky, ktoré vidíš:
+### 1.2
 
-- Documents
-- Downloads
-- Desktop
-
----
-
-### 1.3 Napíš `ls -l`. Nájdi:
-
-- **Jeden priečinok** (začína `d`): `drwxr-xr-x Documents`
-- **Jeden súbor** (začína `-`): `-rw-r--r-- file.txt`
+- Documents  
+- Downloads  
+- Desktop  
 
 ---
 
-### 1.4 Napíš `ls -a`. Zapíš aspoň 3 skryté položky:
+### 1.3
+
+- priečinok: `drwxr-xr-x Documents`
+- súbor: `-rw-r--r-- notes.txt`
+
+---
+
+### 1.4
 
 - .bashrc  
 - .profile  
@@ -39,7 +39,7 @@
 
 ## Úloha 2 — Navigácia po strome
 
-### 2.1 Spusti `cd ~`, potom `pwd`:
+### 2.1
 
 ```
 /home/student
@@ -47,7 +47,7 @@
 
 ---
 
-### 2.2 Spusti `cd ..`, potom `pwd`:
+### 2.2
 
 ```
 /home
@@ -55,7 +55,7 @@
 
 ---
 
-### 2.3 Spusti `cd /`, potom `pwd`:
+### 2.3
 
 ```
 /
@@ -63,7 +63,7 @@
 
 ---
 
-### 2.4 Spusti `cd -`. Čo ti vypíše shell na obrazovku?
+### 2.4
 
 ```
 /home/student
@@ -71,18 +71,16 @@
 
 ---
 
-### 2.5 Ako sa najrýchlejšie vrátiš do svojho domovského adresára? Napíš dva spôsoby:
+### 2.5
 
-1. `cd ~`
+1. `cd ~`  
 2. `cd`
 
 ---
 
 ## Úloha 3 — Kopírovanie
 
-### 3.1 Vytvor štruktúru:
-
-Výstup `ls`:
+### 3.1
 
 ```
 Documents  Downloads  skola  poznamky.txt  uloha.txt
@@ -90,9 +88,7 @@ Documents  Downloads  skola  poznamky.txt  uloha.txt
 
 ---
 
-### 3.2 Skopíruj súbor do priečinka:
-
-Výstup `ls skola/`:
+### 3.2
 
 ```
 poznamky.txt
@@ -100,14 +96,14 @@ poznamky.txt
 
 ---
 
-### 3.3 Duplikuj súbor pod novým menom:
+### 3.3
 
 - [x] áno  
 - [ ] nie  
 
 ---
 
-### 3.4 Skús skopírovať priečinok BEZ `-r`:
+### 3.4
 
 ```
 cp: -r not specified; omitting directory 'skola'
@@ -115,19 +111,17 @@ cp: -r not specified; omitting directory 'skola'
 
 ---
 
-### 3.5 Teraz s `-r`:
-
-Výstup `ls`:
+### 3.5
 
 ```
-skola  zaloha_skola  Documents  Downloads
+Documents  Downloads  skola  zaloha_skola  poznamky.txt  uloha.txt
 ```
 
 ---
 
-### 3.6 Prečo `cp` potrebuje `-r` pri priečinkoch?
+### 3.6
 
-Pretože priečinok obsahuje ďalšie súbory a podpriečinky, ktoré treba kopírovať rekurzívne.
+Príkaz `cp` potrebuje `-r`, pretože priečinok obsahuje ďalšie súbory a musí sa kopírovať rekurzívne.
 
 ---
 
@@ -135,8 +129,8 @@ Pretože priečinok obsahuje ďalšie súbory a podpriečinky, ktoré treba kop�
 
 ### 4.1
 
-- [ ] áno — ostal  
-- [x] nie — zmizol (premenovaný)
+- [ ] áno  
+- [x] nie  
 
 ---
 
@@ -147,7 +141,7 @@ $ ls
 Documents  Downloads  hotovo.txt
 
 $ ls Documents/
-(skôr existujúce súbory v Documents)
+(ďalšie súbory v priečinku Documents)
 ```
 
 ---
@@ -159,13 +153,13 @@ $ ls Documents/
 
 ---
 
-### 4.4 Doplň pravidlo:
+### 4.4
 
-- `mv` súbor priečinok/ → **presun**
-- `mv` súbor novy_nazov → **premenovanie**
+- presun  
+- premenovanie  
 
-**Ako `mv` rozozná akciu?**  
-Podľa toho, či cieľ existuje ako priečinok alebo nie.
+**Vysvetlenie:**  
+`mv` zisťuje, či cieľ existuje ako priečinok alebo nie.
 
 ---
 
@@ -194,38 +188,31 @@ Documents  Downloads
 
 ---
 
-### 5.4 Kde skončí vymazaný súbor v Linuxe?
+### 5.4
 
-Nikde — je okamžite odstránený zo systému (nepoužíva sa kôš ako vo Windows).
-
----
-
-### 5.5 Prečo je `rm -rf /` nebezpečný?
-
-Pretože bez potvrdenia môže zmazať celý súborový systém vrátane systémových súborov, čím zničí celý operačný systém.
+Súbor sa neskončí v koši — je okamžite odstránený zo systému.
 
 ---
 
-## Bonus — tab completion a history
+### 5.5
+
+`rm -rf /` je nebezpečný, pretože môže vymazať celý operačný systém bez potvrdenia.
+
+---
+
+## Bonus
 
 ### B.1
-
-Doplnil sa názov priečinka automaticky (Tab completion).
-
----
+Automatické dopĺňanie názvu (Tab completion).
 
 ### B.2
-
 Zobrazil sa predchádzajúci príkaz.
 
----
-
 ### B.3
-
-Najzaujímavejšie: Tab completion, pretože zrýchľuje prácu a znižuje chyby v písaní príkazov.
+Najzaujímavejší bol `cd`, lebo umožňuje navigáciu v systéme.
 
 ---
 
 ## Záver
 
-Najužitočnejší príkaz bol `cd`, pretože umožňuje rýchlu navigáciu v systéme.
+Najužitočnejší príkaz bol `ls`, pretože umožňuje rýchlo vidieť obsah priečinkov.
