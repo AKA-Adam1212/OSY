@@ -44,13 +44,13 @@ which python3
 ### 2.1 Spusti `cat /etc/hostname`. Ako sa volá tvoj počítač?
 
 ```bash
-ubuntu-vbox
+adam-VirtualBox
 ```
 
 ### 2.2 Spusti `cat /etc/passwd | grep $USER`. Skopíruj **celý riadok**:
 
 ```bash
-student:x:1000:1000:Student:/home/student:/bin/bash
+adam:x:1000:1000:Adam:/home/adam:/bin/bash
 ```
 
 ### 2.3 Z tohto riadku zisti:
@@ -76,7 +76,7 @@ cat /proc/cpuinfo | grep "model name" | head -1
 ```
 
 ```bash
-model name : Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+model name : 12th Gen Intel(R) Core(TM) i5-12400F
 ```
 
 ### 3.2 Koľko máš RAM? Spusti:
@@ -86,15 +86,15 @@ cat /proc/meminfo | head -3
 ```
 
 ```bash
-MemTotal:        2048000 kB
-MemFree:          850000 kB
-MemAvailable:    1450000 kB
+MemTotal:        4010532 kB
+MemFree:          2481752 kB
+MemAvailable:    2965240 kB
 ```
 
 ### 3.3 Ako dlho beží systém? Spusti `uptime`:
 
 ```bash
-14:32:10 up 25 min, 1 user, load average: 0.05, 0.03, 0.01
+14:29:30 up 26 min, 1 user, load average: 0.01, 0.01, 0.02
 ```
 
 ### 3.4 Vymenuj **3 logy**, ktoré nájdeš v `/var/log/`:
@@ -103,9 +103,9 @@ MemAvailable:    1450000 kB
 ls /var/log/ | head
 ```
 
-- syslog
+- alternatives.log
 - auth.log
-- kern.log
+- boot.log
 
 ### 3.5 Aké disky / partície máš? Spusti:
 
@@ -117,12 +117,13 @@ ls /dev | grep sd
 sda
 sda1
 sda2
+sda3
 ```
 
 ### 3.6 Bonus — spusti `uname -a` a zapíš výstup:
 
 ```bash
-Linux ubuntu-vbox 6.8.0-31-generic #31-Ubuntu SMP x86_64 GNU/Linux
+Linux adam-VirtualBox 6.14.0-37-generic #37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 ---
@@ -165,27 +166,27 @@ cat /etc/os-release | head -3
 ```
 
 ```bash
-NAME="Ubuntu"
-VERSION="24.04 LTS (Noble Numbat)"
-ID=ubuntu
+NAME="Linux Mint"
+VERSION="22.3 (Zena)"
+ID=linuxmint
 ```
 
 ### 5.2 Si root alebo bežný používateľ? Spusti `whoami`:
 
 ```bash
-student
+adam
 ```
 
 ### 5.3 Koľko používateľov má účet v `/home`? Spusti `ls /home`:
 
 ```bash
-student
+adam
 ```
 
 ### 5.4 Aká verzia jadra beží? Spusti `uname -r`:
 
 ```bash
-6.8.0-31-generic
+6.14.0-37-generic
 ```
 
 ### 5.5 Vlastnými slovami: aké **3 príkazy** spustíš ako prvé na novom Linuxe, aby si zistil, kde si?
