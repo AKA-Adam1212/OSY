@@ -1,7 +1,6 @@
-````md
 # Cvičenie: Súborové systémy + monitorovanie procesov
 
-**Meno:** Adam  
+**Meno:** Adam Šichta 
 **Dátum:** 04.06.2026
 
 > Vyplň odpovede pod každú otázku. Výstupy z terminálu prilep do code blokov.
